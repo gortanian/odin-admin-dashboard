@@ -59,7 +59,8 @@ img {
 body {
     display: grid;
     grid-template-rows: 1fr 5fr;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 1fr 4fr;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .dashboard {
@@ -70,10 +71,33 @@ body {
 .dashboard > div, 
 .dashboard > ul {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 3.5rem 1fr;
     padding-bottom: 40px;
     align-items: center;
     color: white;
+}
+
+.dashboard > div {
+    grid-template-rows: 3.5rem;
+}
+
+.dashboard > ul > *{
+    padding: 10px 0px;
+    font-weight: 600;
+}
+
+.dashboard img {
+    filter: invert(100%);
+    justify-self: center;
+}
+
+.dashboard .dashboard-icon {
+    height: 2.2rem;
+}
+
+.dashboard h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
 
 .header {
@@ -117,3 +141,9 @@ form input {
 .content .project-card {
     background: white;
 }
+
+/* focus */
+body > *:not(.dashboard) {
+    opacity: 20%;
+}
+
