@@ -57,6 +57,7 @@ img {
 }
 
 body {
+    color: rgb(35, 35, 35);
     display: grid;
     grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr 4fr;
@@ -171,26 +172,46 @@ form input {
     display: grid; 
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 3fr 1fr;
+    box-shadow: inset 0px 3px 3px 0px rgba(0, 0, 0, 0.15);
+    gap: 60px 15px; 
+    padding: 60px 15px;
+}
+
+.content > div {
+    position: relative;
+}
+
+.content h2 {
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: -1.7rem;
+
 }
 
 .content > .projects {
     grid-row: 1 / -1;
     display: grid; 
-    grid-template-rows: 30px repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    margin: 15px;
+}
+
+.content > .announcements {
+    display: grid; 
+    grid-template-rows: 1fr;
+}
+
+.content > .trending {
+    display: grid; 
+    grid-template-rows: 1fr;
 }
 
 .content > .projects > h2 {
     grid-column: 1 / -1;
 }
 
-.content .project-card {
+.content .card {
     background: white;
 }
 
-/* focus */
-body > *:not(header) {
-    opacity: 20%;
-}
