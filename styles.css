@@ -121,7 +121,7 @@ body {
     flex: 1 1 auto;
 }
 
-.header .user-icon {
+.header .user-icon { /* found at https://www.iconfinder.com/search?q=cat%20yarn&price=free*/
     height: 2rem;
 }
 
@@ -194,7 +194,7 @@ form input {
     display: grid; 
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 25px;
 }
 
 .content > .announcements {
@@ -213,5 +213,11 @@ form input {
 
 .content .card {
     background: white;
+    border-radius: 7px;
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.15);
+    padding: 25px;
 }
 
+.content .project-card {
+    border-left: 7px solid #ff942f;
+}
