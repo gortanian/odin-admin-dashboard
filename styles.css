@@ -53,7 +53,7 @@ a {
 }
 
 img {
-    height: 1rem;
+    height: 1.2rem;
 }
 
 body {
@@ -103,19 +103,67 @@ body {
 .header {
     display: grid;
     grid-template-rows: 2fr 3fr;
+    padding: 0px 30px;
 }
 
 .header > .flex-container {
     display: flex;
     align-items: center;
+    gap: 15px;
 }
 
-.header > .flex-container > *:not(img) {
+.header > .flex-container > * {
+    flex: 0 1 auto;
+}
+
+.header > .flex-container > form {
     flex: 1 1 auto;
 }
 
+.header .user-icon {
+    height: 2rem;
+}
+
+.header .username {
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.header .flex-container:nth-child(2) img {
+    height: 3rem;
+}
+
+.header .flex-container:nth-child(2) .user-greeting {
+    margin-right: auto;
+}
+
+.header .flex-container:nth-child(2) .greeting {
+    font-size: .7rem;
+    font-weight: bold;
+    padding-bottom: 4px;
+}
+
+.header .flex-container:nth-child(2) .username {
+    font-size: 1.2rem;
+}
+
+.header .flex-container:nth-child(2) button {
+    color: white;
+    font-weight: bold;
+    font-size: .8rem;
+    border: none; 
+    border-radius: 40px;
+    background-color: #1992d4;
+    padding: 8px;
+    width: 90px;
+}
+
 form input {
-    width: 90%;
+    width: 85%;
+    height: 1.5rem;
+    background-color: #e2e8f0;
+    border: none;
+    border-radius: .75rem;
 }
 
 .content {
@@ -143,7 +191,6 @@ form input {
 }
 
 /* focus */
-body > *:not(.dashboard) {
+body > *:not(header) {
     opacity: 20%;
 }
-
