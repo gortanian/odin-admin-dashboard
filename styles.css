@@ -220,4 +220,30 @@ form input {
 
 .content .project-card {
     border-left: 7px solid #ff942f;
+    display: flex; 
+    flex-direction: column;
+}
+
+.project-card h3 {
+    font-weight: bold;
+    font-size: .9rem;
+    margin-bottom: 5px;
+}
+
+.project-card p {
+    font-size: .85rem;
+    opacity: 70%;
+}
+
+.project-card .buttons {
+    flex: 1 0 auto;
+    display: flex; 
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.buttons button {
+    background-color: white;
+    border: none;
 }
