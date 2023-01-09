@@ -200,6 +200,7 @@ form input {
 .content > .announcements {
     display: grid; 
     grid-template-rows: 1fr;
+    font-size: .5rem;
 }
 
 .content > .trending {
@@ -233,6 +234,7 @@ form input {
 .project-card p {
     font-size: .85rem;
     opacity: 70%;
+    margin-bottom: 10px;
 }
 
 .project-card .buttons {
